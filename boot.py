@@ -4,9 +4,9 @@ import keyboard
 
 
 def enviar_mensagem():
-    numero = input("Digite o número com DDD (ex: +5511999999999): ")
+    numero = input("Digite o número com DDD (ex: +55 11 999999999): ")
     mensagem = input("Digite a mensagem: ")
-    hora = int(input("Digite a hora para enviar (formato 24h): "))
+    hora = int(input("Digite a hora para enviar (formato 24horas): "))
     minuto = int(input("Digite os minutos: "))
 
     print(f"Agendando mensagem para {numero} às {hora}:{minuto}...")
@@ -14,7 +14,7 @@ def enviar_mensagem():
 
 
 def enviar_mensagem_automatica():
-    numero = input("Digite o número com DDD (ex: +5511999999999): ")
+    numero = input("Digite o número com DDD (ex: +55 11 999999999): ")
     mensagem = input("Digite a mensagem: ")
 
     print("\nAbrindo WhatsApp Web e enviando a mensagem automaticamente...")
