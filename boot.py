@@ -7,7 +7,7 @@ def enviar_mensagem():
     numero = input("Digite o número com DDD (ex: +55 11 999999999): ")
     mensagem = input("Digite a mensagem: ")
     hora = int(input("Digite a hora para enviar (formato 24horas): "))
-    minuto = int(input("Digite os minutos: "))
+    minuto = int(input("Digite o horário: "))
 
     print(f"Agendando mensagem para {numero} às {hora}:{minuto}...")
     kit.sendwhatmsg(numero, mensagem, hora, minuto)
@@ -22,7 +22,7 @@ def enviar_mensagem_automatica():
 
                               wait_time=15)  # Aguarda 15s para garantir o carregamento do WhatsApp Web
 
-    print(f"\n✅ Mensagem enviada para {numero} com sucesso!")
+    print(f"\n✅ Mensagem enviada para {numero} com excito!")
 
 
 def menu():
